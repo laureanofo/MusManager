@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff"
+    tools:context="es.nitelmursoftware.mustats.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/et_date"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/date"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/et_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/bt_edit"
+            android:layout_toRightOf="@+id/tv_date"
+            android:ems="10"
+            android:enabled="false"
+            android:gravity="center_horizontal"
+            android:inputType="date"
+            android:textColor="#000" />
+
+        <RelativeLayout
+            android:id="@+id/ly_couple1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_date"
+            android:layout_margin="2dp"
+            android:background="@drawable/border">
+
+            <TextView
+                android:id="@+id/tv_couple1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:gravity="center_horizontal"
+                android:text="@string/couple1"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <ImageView
+                android:id="@+id/iv_player11"
+                android:layout_width="48dp"
+                android:layout_height="64dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tv_couple1"
+                android:src="@drawable/ic_launcher" />
+
+            <Spinner
+                android:id="@+id/sp_player11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/iv_player11"
+                android:layout_below="@+id/tv_couple1"
+                android:layout_toRightOf="@+id/iv_player11" />
+
+            <ImageView
+                android:id="@+id/iv_player12"
+                android:layout_width="48dp"
+                android:layout_height="64dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/tv_couple1"
+                android:src="@drawable/ic_launcher" />
+
+            <Spinner
+                android:id="@+id/sp_player12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sp_player11"
+                android:layout_toLeftOf="@+id/iv_player12" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ly_couple2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ly_couple1"
+            android:layout_margin="2dp"
+            android:background="@drawable/border">
+
+            <TextView
+                android:id="@+id/tv_couple2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:gravity="center_horizontal"
+                android:text="@string/couple2"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <ImageView
+                android:id="@+id/iv_player21"
+                android:layout_width="48dp"
+                android:layout_height="64dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tv_couple2"
+                android:src="@drawable/ic_launcher" />
+
+            <Spinner
+                android:id="@+id/sp_player21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/iv_player21"
+                android:layout_below="@+id/tv_couple2"
+                android:layout_toRightOf="@+id/iv_player21"
+                android:gravity="right" />
+
+            <ImageView
+                android:id="@+id/iv_player22"
+                android:layout_width="48dp"
+                android:layout_height="64dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/tv_couple2"
+                android:src="@drawable/ic_launcher" />
+
+            <Spinner
+                android:id="@+id/sp_player22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sp_player21"
+                android:layout_toLeftOf="@+id/iv_player22" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/bt_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ly_result"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:text="Añadir"
+            android:visibility="invisible" />
+
+        <RelativeLayout
+            android:id="@+id/ly_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ly_couple2"
+            android:layout_margin="2dp"
+            android:background="@drawable/border">
+
+            <TextView
+                android:id="@+id/tv_result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:gravity="center_horizontal"
+                android:text="@string/result"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/tv_result1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tv_result"
+                android:text="@string/couple1"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/et_result1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tv_result1"
+                android:ems="3"
+                android:enabled="false"
+                android:gravity="center_horizontal"
+                android:inputType="number"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/tv_result2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/tv_result"
+                android:text="@string/couple2"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/et_result2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/tv_result2"
+                android:ems="3"
+                android:enabled="false"
+                android:gravity="center_horizontal"
+                android:inputType="number"
+                android:textColor="#000" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ly_forecast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ly_result"
+            android:layout_margin="2dp"
+            android:background="@drawable/border">
+
+            <TextView
+                android:id="@+id/tv_forecast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:gravity="center_horizontal"
+                android:text="@string/forecast"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/tv_forecast1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tv_forecast"
+                android:text="@string/couple1"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/et_forecast1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tv_forecast1"
+                android:ems="3"
+                android:enabled="false"
+                android:gravity="center_horizontal"
+                android:inputType="number"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/tv_forecast2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/tv_forecast"
+                android:text="@string/couple2"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/et_forecast2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/tv_forecast2"
+                android:ems="3"
+                android:enabled="false"
+                android:gravity="center_horizontal"
+                android:inputType="number"
+                android:textColor="#000" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/bt_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/et_date"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/edit"
+            android:textSize="10sp" />
+    </RelativeLayout>
+
+</ScrollView>

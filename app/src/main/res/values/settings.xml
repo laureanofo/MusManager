@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="pref_connection">Conexión</string>
+    <string name="pref_connection_key">connection</string>
+    <string name="pref_connection_summary">Tipo de conexión para la base de datos</string>
+    <string name="pref_dbname">BBDD</string>
+    <string name="pref_dbname_key">dbname</string>
+    <string name="pref_dbname_summary">Nombre de la base de datos</string>
+    <string name="pref_url">URL</string>
+    <string name="pref_url_key">url</string>
+    <string name="pref_url_summary">Dirección para la descarga de la BBDD</string>
+    <string name="pref_ftpuser">Usuario FTP</string>
+    <string name="pref_ftpuser_key">ftp_user</string>
+    <string name="pref_ftpuser_summary">Usuario para la conexión por FTP</string>
+    <string name="pref_ftppassword">Contraseña FTP</string>
+    <string name="pref_ftppassword_key">ftp_password</string>
+    <string name="pref_ftppassword_summary">Contraseña para la conexión por FTP</string>
+    <string name="pref_dropboxfile">BBDD en Dropbox</string>
+    <string name="pref_dropboxfile_key">dropboxfile</string>
+    <string name="pref_dropboxfile_summary">Selecciona el archivo de Dropbox para la BBDD</string>
+    <string name="pref_days_last">Días cálculo estadísticas</string>
+    <string name="pref_days_last_key">days</string>
+    <string name="pref_days_last_summary">Nº días para el cálculo de estadísticas</string>
+    <string name="pref_minimum_percentage">Porcentaje minimo</string>
+    <string name="pref_minimum_percentage_key">minimumpercentage</string>
+    <string name="pref_minimum_percentage_summary">Porcentaje minimo de partidas medias jugadas</string>
+    <string name="pref_db_modified">db_modified</string>
+
+    <string-array name="pref_connection">
+        <item>Dropbox</item>
+        <item>FTP</item>
+        <item>HTTP</item>
+    </string-array>
+    <string-array name="pref_connectionvalues">
+        <item>Dropbox</item>
+        <item>FTP</item>
+        <item>HTTP</item>
+    </string-array>
+
+</resources>

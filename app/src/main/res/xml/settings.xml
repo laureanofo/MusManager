@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditTextPreference
+        android:defaultValue="musstats.nitelmursoftware.es"
+        android:key="@string/pref_url_key"
+        android:summary="@string/pref_url_summary"
+        android:title="@string/pref_url" />
+
+    <EditTextPreference
+        android:defaultValue="user"
+        android:dependency=""
+        android:key="@string/pref_ftpuser_key"
+        android:summary="@string/pref_ftpuser_summary"
+        android:title="@string/pref_ftpuser" />
+    <EditTextPreference
+        android:defaultValue="password"
+        android:inputType="textPassword"
+        android:key="@string/pref_ftppassword_key"
+        android:summary="@string/pref_ftppassword_summary"
+        android:title="@string/pref_ftppassword" />
+
+</PreferenceScreen>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer-array name="level_value">
+        <item>30</item>
+        <item>35</item>
+        <item>40</item>
+        <item>45</item>
+        <item>50</item>
+        <item>55</item>
+        <item>60</item>
+        <item>65</item>
+        <item>70</item>
+    </integer-array>
+
+    <string-array name="level_name">
+        <item>Barrendero</item>
+        <item>Pagacafés</item>
+        <item>Manturrón</item>
+        <item>Amateur</item>
+        <item>Neo</item>
+        <item>Pillón</item>
+        <item>Puto amo</item>
+        <item>Bajo muslo</item>
+        <item>Profesional</item>
+    </string-array>
+
+</resources>

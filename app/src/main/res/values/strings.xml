@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">MusManager</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_edit">Editar</string>
+    <string name="action_delete">Borrar</string>
+
+
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="updateerror">Error actualizando bases de datos. Reinicia aplicación o intentalo mas tarde.</string>
+    <string name="updatesuccess">Bases de datos actualizadas.</string>
+    <string name="updating">Actualizando bases de datos.</string>
+    <string name="newappversion">Tu aplicación no es compatible con la ultima versión de la base de datos. ¿Quieres actualizar tu aplicación desde Google Play ahora?</string>
+    <string name="dbupdated">Base de datos actualizada. Reinicia la aplicacion</string>
+
+    <!-- menu -->
+    <string name="action_update">Recalcular</string>
+    <string name="action_settings">Configuración</string>
+    <string name="action_add_player">Añadir Jugador</string>
+    <string name="action_add_game">Añadir Juego</string>
+    <string name="action_sync">Descargar resultados</string>
+    <string name="action_upload">Subir resultados</string>
+    <string name="fragment_players">Jugadores</string>
+    <string name="fragment_games">Partidas</string>
+    <string name="fragment_my_player">Mi jugador</string>
+
+    <!-- player -->
+    <string name="add_player">Añadir</string>
+    <string name="name">Nombre</string>
+    <string name="alias">Alias</string>
+    <string name="level">Nivel (Últimos 30 días / Total)</string>
+    <string name="lastwins">Últimas\nPartidas Ganadas</string>
+    <string name="btgames">Partidas</string>
+    <string name="wins">Partidas Ganadas</string>
+    <string name="positives_negatives">Positivos/Negativos</string>
+    <string name="rafales">Rachas\nganadas/perdidas</string>
+    <string name="bestmate">Mejor Pareja</string>
+    <string name="worstmate">Peor Pareja</string>
+    <string name="title_activity_main">MuStats</string>
+    <string name="title_section1">Mis estadísticas</string>
+    <string name="title_section2">Jugadores</string>
+    <string name="title_section3">Partidas</string>
+    <string name="player_added_title">Nuevo Jugador</string>
+    <string name="player_added_text">Añadido nuevo jugador con éxito.</string>
+    <string name="player_added_text_error">No se ha añadido el nuevo jugador. Revise los datos.</string>
+    <string name="player_update_title">Actualizado Jugador</string>
+    <string name="player_update_text">Jugador actualizado con éxito.</string>
+    <string name="player_update_text_error">No se ha actualizado el jugador. Revise los datos.</string>
+    <string name="ok">OK</string>
+    <string name="edit">Editar</string>
+    <string name="save">Guardar</string>
+
+    <!-- game -->
+    <string name="forecast">Pronóstico</string>
+    <string name="result">Resultado</string>
+    <string name="couple1">Pareja 1</string>
+    <string name="couple2">Pareja 2</string>
+    <string name="date">Fecha</string>
+    <string name="recalculating_title">Recalculando Resultados</string>
+    <string name="duplicatedplayer">Jugador duplicado. Revise parejas!</string>
+    <string name="resulterror">Los resultados no son validos. Revise resultados!</string>
+    <string name="dateerror">La fecha no es correcta. Revise formato dd/mm/aaaa!</string>
+    <string name="game_added_title">Nueva Partida</string>
+    <string name="game_added_text">Añadida nueva partida con éxito.</string>
+    <string name="game_added_text_error">No se ha añadido la nueva partida. Revise los datos.</string>
+    <string name="game_update_title">Actualizada Partida</string>
+    <string name="game_update_text">Actualizada partida con éxito.</string>
+    <string name="game_update_text_error">No se ha actualizado la partida. Revise los datos.</string>
+    <string name="set_player_title">Seleciona tu Jugador</string>
+    <string name="set_player">¿Eres tu este jugador?</string>
+    <string name="yes">Si</string>
+    <string name="cancel">Cancelar</string>
+    <string name="delete_game_title">Borrar Juego</string>
+    <string name="delete_game">¿Quiere borrar este juego?</string>
+</resources>

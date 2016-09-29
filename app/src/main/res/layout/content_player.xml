@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.14">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/iv_picture"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.14"
+                    android:background="#00ffffff"
+                    android:minHeight="200dp"
+                    android:minWidth="150dp"
+                    android:scaleType="fitXY" />
+
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.14">
+
+                    <EditText
+                        android:id="@+id/et_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_weight="0.14"
+                        android:editable="true"
+                        android:ems="10"
+                        android:enabled="false"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:inputType="textPersonName"
+                        android:text="Name"
+                        android:textColor="#000000" />
+
+                    <EditText
+                        android:id="@+id/et_alias"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_column="3"
+                        android:layout_weight="0.14"
+                        android:editable="true"
+                        android:enabled="false"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="Alias"
+                        android:textColor="#000000" />
+                </TableLayout>
+
+
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tv_level_current"
+                    android:layout_column="0"
+                    android:layout_span="5"
+                    android:layout_weight="0.14"
+                    android:text="Actual"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <EditText
+                    android:id="@+id/et_level_current"
+                    android:layout_column="5"
+                    android:layout_weight="0.14"
+                    android:enabled="false"
+                    android:gravity="center_horizontal"
+                    android:text="Actual"
+                    android:textColor="#000000" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tv_level"
+                    android:layout_column="0"
+                    android:layout_span="5"
+                    android:layout_weight="0.14"
+                    android:text="Absoluto"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <EditText
+                    android:id="@+id/et_level"
+                    android:layout_column="5"
+                    android:layout_weight="0.14"
+                    android:enabled="false"
+                    android:gravity="center_horizontal"
+                    android:text="Absoluto"
+                    android:textColor="#000000" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tv_coffee"
+                    android:layout_column="0"
+                    android:layout_span="5"
+                    android:layout_weight="0.14"
+                    android:text="Café € (Ac/Ab)"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <EditText
+                    android:id="@+id/et_coffee"
+                    android:layout_column="5"
+                    android:layout_weight="0.14"
+                    android:enabled="false"
+                    android:gravity="center_horizontal"
+                    android:text="Absoluto"
+                    android:textColor="#000000" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tv_days"
+                    android:layout_column="0"
+                    android:layout_span="5"
+                    android:layout_weight="0.14"
+                    android:text="Días (Part./Día)"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <EditText
+                    android:id="@+id/et_days"
+                    android:layout_column="5"
+                    android:layout_weight="0.14"
+                    android:enabled="false"
+                    android:gravity="center_horizontal"
+                    android:text="Días"
+                    android:textColor="#000000" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tv_matches"
+                    android:layout_column="0"
+                    android:layout_span="5"
+                    android:layout_weight="0.14"
+                    android:text="Partidas G/T"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <EditText
+                    android:id="@+id/et_matches"
+                    android:layout_column="5"
+                    android:layout_weight="0.14"
+                    android:enabled="false"
+                    android:gravity="center_horizontal"
+                    android:text="Partidas"
+                    android:textColor="#000000" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tv_positives_negatives"
+                    android:layout_column="0"
+                    android:layout_span="5"
+                    android:layout_weight="0.14"
+                    android:text="Juegos G/P"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <EditText
+                    android:id="@+id/et_positives_negatives"
+                    android:layout_column="5"
+                    android:layout_weight="0.14"
+                    android:enabled="false"
+                    android:gravity="center_horizontal"
+                    android:text="Positivos/negativos"
+                    android:textColor="#000000" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tv_periods"
+                    android:layout_column="0"
+                    android:layout_span="5"
+                    android:layout_weight="0.14"
+                    android:text="Rachas G/P"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <EditText
+                    android:id="@+id/et_periods"
+                    android:layout_column="5"
+                    android:layout_weight="0.14"
+                    android:enabled="false"
+                    android:gravity="center_horizontal"
+                    android:text="Rachas"
+                    android:textColor="#000000" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tv_mate"
+                    android:layout_column="0"
+                    android:layout_span="5"
+                    android:layout_weight="0.14"
+                    android:text="Pareja M/P"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <EditText
+                    android:id="@+id/et_mate"
+                    android:layout_column="5"
+                    android:layout_weight="0.14"
+                    android:enabled="false"
+                    android:gravity="center_horizontal"
+                    android:text="Pareja"
+                    android:textColor="#000000" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Switch
+                    android:id="@+id/sw_abs_par"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:text="Absoluto" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/lc_chart"
+                    android:layout_width="match_parent"
+
+                    android:layout_height="300dp"
+                    android:layout_weight="0.14" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/bt_games"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.14"
+                    android:text="Partidas" />
+
+                <Button
+                    android:id="@+id/bt_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.14"
+                    android:text="Editar" />
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
